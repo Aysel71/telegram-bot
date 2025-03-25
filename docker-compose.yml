@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  telegram-bot:
+    build: .
+    container_name: telegram-image-comparison-bot
+    restart: unless-stopped
+    volumes:
+      - ./img_2:/app/img_2
+      - ./bot.log:/app/bot.log
+    environment:
+      - TZ=Europe/Moscow
