@@ -1,0 +1,7 @@
+# Core dependencies
+aiogram>=3.0.0
+firebase-admin>=6.0.0
+
+# Optional - for development
+pytest>=7.0.0
+flake8>=6.0.0
